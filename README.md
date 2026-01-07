@@ -20,12 +20,12 @@ Status: open for feedback:
 
 * _Interlude:_ Continuous action space. A description of how to model continuous action distributions with a normal distribution, how to do back-propagation, and how to treat bounded action spaces. [Notebook](notebooks/Interlude%20continuous%20action%20space.ipynb)
 
+3. **REINFORCE with baseline with continuous action space.** Preparation for the Mujoco environments used in the PPO paper. Establishing reference performance against which PPO to compare to. [Notebook](notebooks/REINFORCE%20with%20baseline%20continuous.ipynb)
+
 
 Status: first draft:
 
-3. **REINFORCE with baseline with continuous action space.** Preparation for the Mujoco environments used in the PPO paper. Establishing reference performance against which PPO to compare to. [Notebook](notebooks/REINFORCE%20with%20baseline%20continuous.ipynb)
-
-4. **PPO for Mujoco environments.** Collection of a batch of several episodes, gradient descent using samples of time-steps, for several epochs. Introduction of the actor-critic approach with generalized advantage estimation. Correction for importance sampling, and clipped objective. [Notebook](notebooks/PPO%20MuJoCo.ipynb)
+1. **PPO for Mujoco environments.** Collection of a batch of several episodes, gradient descent using samples of time-steps, for several epochs. Introduction of the actor-critic approach with generalized advantage estimation. Correction for importance sampling, and clipped objective. [Notebook](notebooks/PPO%20MuJoCo.ipynb)
 
 
 Status: Planned:
