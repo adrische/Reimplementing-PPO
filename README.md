@@ -25,7 +25,7 @@ Status: open for feedback:
 
 Status: first draft:
 
-1. **PPO for Mujoco environments.** Collection of a batch of several episodes, gradient descent using samples of time-steps, for several epochs. Introduction of the actor-critic approach with generalized advantage estimation. Correction for importance sampling, and clipped objective. [Notebook](notebooks/PPO%20MuJoCo.ipynb)
+4. **PPO for Mujoco environments.** Collection of a batch of several episodes, gradient descent using samples of time-steps, for several epochs. Introduction of the actor-critic approach with generalized advantage estimation. Correction for importance sampling, and clipped objective. [Notebook](notebooks/PPO%20MuJoCo.ipynb)
 
 
 Status: Planned:
