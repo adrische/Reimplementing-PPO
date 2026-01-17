@@ -25,11 +25,14 @@ Status: open for feedback:
 
 Status: first draft:
 
-4. **PPO for Mujoco environments.** Collection of a batch of several episodes, gradient descent using samples of time-steps, for several epochs. Introduction of the actor-critic approach with generalized advantage estimation. Correction for importance sampling, and clipped objective. [Notebook](notebooks/PPO%20MuJoCo.ipynb)
+4. **PPO for Mujoco environments.** Collection of a batch of several episodes, gradient descent using samples of time-steps, for several epochs. Introduction of the actor-critic approach with generalized advantage estimation. Correction for importance sampling, and clipped objective. Comparing against the [The 37 Implementation Details of PPO](https://iclr-blog-track.github.io/2022/03/25/ppo-implementation-details/) [Notebook](notebooks/PPO%20MuJoCo.ipynb)
 
 
-Status: Planned:
+Status: TBD 
 
+Originally I had also planned to implement the modifications needed for Roboschool and Atari, but given how much I was missing already for Mujoco, I'm currently not sure my approach of only following the paper is feasible.
+
+<!--
 * _Interlude:_ Further study the effects of generalized advantage estimation, importance sampling, and clipped objective.
 
 * _Interlude:_ Performance improvements.
@@ -39,7 +42,7 @@ Status: Planned:
 6. PPO for Atari. Image preprocessing, parameter sharing between policy and value function, entropy bonus.
 
 7. Comparison with reference implementations.
-
+-->
 
 
 ## Learning goals
@@ -47,8 +50,9 @@ Status: Planned:
 The goal is to better understand reference implementations of PPO, such as 
 
 * https://github.com/XinJingHao/PPO-Continuous-Pytorch/
-* https://github.com/vwxyzjn/cleanrl
+* https://github.com/vwxyzjn/cleanrl & https://github.com/vwxyzjn/ppo-implementation-details
 * https://stable-baselines3.readthedocs.io/en/master/
+* https://github.com/MaximeVandegar/Papers-in-100-Lines-of-Code/tree/main/Proximal_Policy_Optimization_Algorithms
 
 Performance or best possible abstraction was not a goal. The focus was on easy-to-follow code and step-by-step introduction and analysis of additional algorithm components.
 
@@ -103,3 +107,7 @@ More courses
 
 The 37 Implementation Details of PPO (2022) https://iclr-blog-track.github.io/2022/03/25/ppo-implementation-details/
 
+Papers
+* [Revisiting Design Choices in Proximal Policy Optimization](https://arxiv.org/pdf/2009.10897)
+* [What Matters In On-Policy Reinforcement Learning? A Large-Scale Empirical Study](https://arxiv.org/pdf/2006.05990)
+* [Implementation Matters in Deep Policy Gradients: A Case Study on PPO and TRPO](https://arxiv.org/pdf/2005.12729)
