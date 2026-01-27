@@ -64,23 +64,23 @@ I did no debugging against reference implementations, as this would also not be 
 
 The approximate maximum average reward over 100 successive episodes during training.
 
-| Environment | 3. R-w-b | 4. own PPO | 4. own PPO batches | 5. own PPO details | original PPO | Reward threshold |
-| ----------- | ----- | ---------- | ---------- | --------------- | ------------ | ------ |
-| HalfCheetah-v5 | 750 - 1000 | 1500 | 1250 |     TBD | 1800 | 4800  |
-| Hopper-v5 | 200             | 400 - 500 | 900 | TBD | 2200 | 3800  |
-| InvertedDoublePendulum-v5 | 100 | 100 | 4000+ | TBD | 8000 | 9100  |
-| InvertedPendulum-v5 | 1000  | 900 | 900 |       TBD | 1000 | 950   |
-| Reacher-v5 | -35            | -40 | -10 |       TBD | -10  | -3.75 |
-| Swimmer-v5 | 35             | 40 | 40 |         TBD | 100  | 360   |
-| Walker2d-v5 | 250           | 300 | 1000+ |     TBD | 3000 | None  |
-| _overall training stability on scale of 1-5_ | 3 | 2 | 1 | TBD | 4-5 | - |
+| Environment | 3. R-w-b | 4. own PPO | 4. own PPO batches | 5. own PPO all details | original PPO | Reward threshold |
+| ----------- | -------- | ---------- | ------------------ | ---------------------- | ------------ | ---------------- |
+| HalfCheetah-v5 | 750 - 1000 | 1500      | 1250  |     TBD   | 1800 | 4800  |
+| Hopper-v5 | 200             | 400 - 500 | 900   | 500-600   | 2200 | 3800  |
+| InvertedDoublePendulum-v5 | 100 | 100   | 4000+ | 7000-8000 | 8000 | 9100  |
+| InvertedPendulum-v5 | 1000  |       900 |  900  |  TBD      | 1000 | 950   |
+| Reacher-v5 | -35            |       -40 |  -10  |  -10      | -10  | -3.75 |
+| Swimmer-v5 | 35             |        40 |  40   |    TBD    | 100  | 360   |
+| Walker2d-v5 | 250           |       300 | 1000+ |    TBD    | 3000 | None  |
+| _overall training stability on scale of 1-5_ | 3 | 2 | 1 | 4 | 4-5 |   -   |
 
 Legend:
 
 * **3. R-w-b**: REINFORCE with baseline (my implementation)
 * **4. own PPO**: My implementation of PPO based only on the paper, missing much of the best practices of scaling & initialization.
 * **4. own PPO batches**: Additionally correct sampling of mini-batches & treatment of epochs
-* **5. own PPO details**: My implementation of PPO with missing pieces based on the 37 implementation details.
+* **5. own PPO all details**: My implementation of PPO with missing pieces based on the 37 implementation details.
 * **original PPO**: Results read off from the original paper (for v1 environments)
 
 
