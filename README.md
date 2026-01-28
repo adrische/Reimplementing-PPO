@@ -66,13 +66,13 @@ The approximate maximum average reward over 100 successive episodes during train
 
 | Environment | 3. R-w-b | 4. own PPO | 4. own PPO batches | 5. own PPO all details | original PPO | Reward threshold |
 | ----------- | -------- | ---------- | ------------------ | ---------------------- | ------------ | ---------------- |
-| HalfCheetah-v5 | 750 - 1000 | 1500      | 1250  |     TBD   | 1800 | 4800  |
-| Hopper-v5 | 200             | 400 - 500 | 900   | 500-600   | 2200 | 3800  |
-| InvertedDoublePendulum-v5 | 100 | 100   | 4000+ | 7000-8000 | 8000 | 9100  |
-| InvertedPendulum-v5 | 1000  |       900 |  900  |  TBD      | 1000 | 950   |
-| Reacher-v5 | -35            |       -40 |  -10  |  -10      | -10  | -3.75 |
-| Swimmer-v5 | 35             |        40 |  40   |    TBD    | 100  | 360   |
-| Walker2d-v5 | 250           |       300 | 1000+ |    TBD    | 3000 | None  |
+| HalfCheetah-v5 | 750 - 1000 | 1500      | 1250  |     TBD   | 1800  | 4800  |
+| Hopper-v5 | 200             | 400 - 500 | 900   | 500-600   | 2200  | 3800  |
+| InvertedDoublePendulum-v5 | 100 | 100   | 4000+ | 7000-8000 | 8000  | 9100  |
+| InvertedPendulum-v5 | 1000  |       900 |  900  |  TBD      | 1000  | 950   |
+| Reacher-v5 | -35            |       -40 |  -10  |  -10      | -10   | -3.75 |
+| Swimmer-v5 | 35             |        40 |  40   |    TBD    | 100   | 360   |
+| Walker2d-v5 | 250           |       300 | 1000+ |    3000+  | 3000+ | None  |
 | _overall training stability on scale of 1-5_ | 3 | 2 | 1 | 4 | 4-5 |   -   |
 
 Legend:
