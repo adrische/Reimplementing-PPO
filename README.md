@@ -20,12 +20,7 @@ This is my attempt at step-by-step reimplementing the paper [Proximal Policy Opt
 | _Interlude:_ Continuous action space. <br> A description of how to model continuous action distributions with a normal distribution, how to do back-propagation, and how to treat bounded action spaces. | [Notebook](notebooks/Interlude%20continuous%20action%20space.ipynb) |
 | 3. **REINFORCE with baseline with continuous action space.** <br> Preparation for the Mujoco environments used in the PPO paper. Establishing reference performance against which PPO to compare to. | [Notebook](notebooks/REINFORCE%20with%20baseline%20continuous.ipynb) |
 | 4. **PPO for Mujoco environments.** <br> Collection of a batch of several episodes, gradient descent using samples of time-steps, for several epochs. Introduction of the actor-critic approach with generalized advantage estimation. Correction for importance sampling, and clipped objective. Comparing against the [The 37 Implementation Details of PPO](https://iclr-blog-track.github.io/2022/03/25/ppo-implementation-details/). Additionally I had initially gotten the sampling of mini-batches/epochs wrong, which I correct. | [Notebook](notebooks/PPO%20MuJoCo.ipynb) |
-
-
-
-### Status: work in progress
-
-5. **PPO for Mujoco environments with implementation details.** Adding the missing applicable details from [The 37 Implementation Details of PPO](https://iclr-blog-track.github.io/2022/03/25/ppo-implementation-details/), most notably: Learning rate decay, scaling of observations, reward, advantages, value function loss clipping, correct treatment of mini-batches/epochs. Additionally: use of different parameter for Adam, use of clipped (instead of truncated) normal distribution, and policy initialization.
+| 5. **PPO for Mujoco environments with implementation details.** <br> Adding the missing applicable details from [The 37 Implementation Details of PPO](https://iclr-blog-track.github.io/2022/03/25/ppo-implementation-details/), most notably: Learning rate decay, scaling of observations, reward, advantages, value function loss clipping, correct treatment of mini-batches/epochs. Additionally: use of different parameter for Adam, use of clipped (instead of truncated) normal distribution, and policy initialization. | [Notebook](notebooks/PPO%20MuJoCo%20implementation%20details.ipynb) |
 
 
 
@@ -66,13 +61,13 @@ The approximate maximum average reward over 100 successive episodes during train
 
 | Environment | 3. R-w-b | 4. own PPO | 4. own PPO batches | 5. own PPO all details | original PPO | Reward threshold |
 | ----------- | -------- | ---------- | ------------------ | ---------------------- | ------------ | ---------------- |
-| HalfCheetah-v5 | 750 - 1000 | 1500      | 1250  |     TBD   | 1800  | 4800  |
-| Hopper-v5 | 200             | 400 - 500 | 900   | 500-600   | 2200  | 3800  |
-| InvertedDoublePendulum-v5 | 100 | 100   | 4000+ | 7000-8000 | 8000  | 9100  |
-| InvertedPendulum-v5 | 1000  |       900 |  900  |  TBD      | 1000  | 950   |
-| Reacher-v5 | -35            |       -40 |  -10  |  -10      | -10   | -3.75 |
-| Swimmer-v5 | 35             |        40 |  40   |    TBD    | 100   | 360   |
-| Walker2d-v5 | 250           |       300 | 1000+ |    3000+  | 3000+ | None  |
+| HalfCheetah-v5 | 750 - 1000 | 1500      | 1250  |     TBD    | 1800  | 4800  |
+| Hopper-v5 | 200             | 400 - 500 | 900   | 500-600 🤷 | 2200  | 3800  |
+| InvertedDoublePendulum-v5 | 100 | 100   | 4000+ | 7000-8000  | 8000  | 9100  |
+| InvertedPendulum-v5 | 1000  |       900 |  900  |  800-900   | 1000  | 950   |
+| Reacher-v5 | -35            |       -40 |  -10  |  -10       | -10   | -3.75 |
+| Swimmer-v5 | 35             |        40 |  40   |    TBD     | 100   | 360   |
+| Walker2d-v5 | 250           |       300 | 1000+ |    3000+   | 3000+ | None  |
 | _overall training stability on scale of 1-5_ | 3 | 2 | 1 | 4 | 4-5 |   -   |
 
 Legend:
