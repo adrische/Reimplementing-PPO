@@ -77,13 +77,16 @@ Legend:
 * **4. own PPO batches**: Additionally correct sampling of mini-batches & treatment of epochs.
 * **5. own PPO all details**: My implementation of PPO with missing pieces based on the 37 implementation details.
 * **original PPO**: Results read off from the original paper (for v1 environments).
-* 🤷: some more debugging needed.
+* 🤷: some more debugging needed. Swimmer gets higher reward with $\gamma = 0.9999$.
 
 
 ![](assets/Comparison_PPO_correctbatches_PPO_all_details.png)
 
 x-axis is episodes completed during training, except for the pendulums, where it is approximate time-steps completed during training.
 
+For comparison, here are the results of the PPO paper:
+
+![](assets/PPO_paper_results_Mujoco.png)
 
 ## References
 
