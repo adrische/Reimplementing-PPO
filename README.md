@@ -4,7 +4,7 @@ This is my attempt at step-by-step reimplementing the paper [Proximal Policy Opt
 
 > **Draft version:** I'm intentionally making this available at an early stage to get (human) feedback. Please don't hesitate to reach out.
 > 
-> I'll give a talk about this attempt at the [Reinforcement Learning Coffee at University Salzburg](https://sarl-plus.github.io/reinforcement_learning_coffee/), February 13th.
+> I gave a talk about this attempt at the [Reinforcement Learning Coffee at University Salzburg](https://sarl-plus.github.io/reinforcement_learning_coffee/), February 13th. [Presentation](assets/presentation.pdf)
 
 
 
